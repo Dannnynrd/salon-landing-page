@@ -19,6 +19,7 @@
     /* Typography */
     --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-secondary: 'Playfair Display', Georgia, serif;
+    --font-logo: 'Montserrat', -apple-system, sans-serif;
 
     /* Font Weights */
     --font-weight-light: 300;

@@ -18,14 +18,7 @@
     max-width: 300px;
 }
 
-.footer__logo {
-    font-family: var(--font-secondary);
-    font-size: var(--text-xl);
-    font-weight: var(--font-weight-medium);
-    letter-spacing: var(--tracking-wide);
-    text-transform: uppercase;
-    margin-bottom: var(--spacing-md);
-}
+/* .footer__logo styles are in header.css for consistency */
 
 .footer__desc {
     color: var(--color-text-muted);

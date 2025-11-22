@@ -1,45 +1,65 @@
-/* Typography - Minimalist Black & White */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap');
+/* Typography - Clean Minimalist */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 body {
-    font-family: var(--font-primary);
-    font-weight: var(--font-weight-normal);
+    font-family: var(--font-logo);
+    font-weight: 400;
     font-size: var(--text-base);
-    line-height: var(--leading-normal);
+    line-height: 1.6;
     color: var(--color-text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-secondary);
-    font-weight: var(--font-weight-normal);
-    line-height: var(--leading-tight);
+    font-family: var(--font-logo);
+    font-weight: 600;
+    line-height: 1.2;
     color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
 }
 
 h1 {
-    font-size: clamp(2.5rem, 7vw, var(--text-6xl));
-    letter-spacing: var(--tracking-tight);
+    font-size: clamp(2.5rem, 7vw, 4.5rem);
+    font-weight: 600;
+    letter-spacing: -0.02em;
 }
 
 h2 {
-    font-size: clamp(1.75rem, 4vw, var(--text-4xl));
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 600;
+    letter-spacing: -0.01em;
 }
 
 h3 {
-    font-size: var(--text-2xl);
+    font-size: var(--text-xl);
+    font-weight: 500;
+}
+
+h4 {
+    font-size: var(--text-base);
+    font-weight: 500;
 }
 
 p {
     color: var(--color-text-light);
     margin-bottom: var(--spacing-md);
+    line-height: 1.7;
+}
+
+p:last-child {
+    margin-bottom: 0;
 }
 
 .text-label {
-    font-family: var(--font-primary);
-    font-size: var(--text-xs);
-    font-weight: var(--font-weight-medium);
+    font-family: var(--font-logo);
+    font-size: 0.7rem;
+    font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: var(--tracking-wider);
+    letter-spacing: 0.2em;
+    color: var(--color-text-muted);
+    display: block;
+    margin-bottom: var(--spacing-sm);
 }
 
 .text-large {

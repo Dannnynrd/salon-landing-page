@@ -43,6 +43,8 @@
     border: none;
     cursor: pointer;
     padding: 5px;
+    position: relative;
+    z-index: 1001;
 }
 
 .nav-toggle span {
@@ -51,6 +53,15 @@
     height: 1px;
     background: var(--color-primary);
     transition: all var(--transition-base);
+}
+
+/* Toggle color on transparent header */
+.header--transparent .nav-toggle span {
+    background: var(--color-white);
+}
+
+.header--transparent .nav-toggle.active span {
+    background: var(--color-primary);
 }
 
 .nav-toggle.active span:nth-child(1) {
@@ -84,6 +95,7 @@
         opacity: 0;
         visibility: hidden;
         transition: all var(--transition-base);
+        z-index: 1000;
     }
 
     .nav__list.active {
@@ -93,5 +105,6 @@
 
     .nav__link {
         font-size: var(--text-lg);
+        color: var(--color-primary);
     }
 }

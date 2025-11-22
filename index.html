@@ -3,15 +3,333 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Salon Landing Page">
-    <title>Salon Landing Page</title>
+    <meta name="description" content="Exklusiver Friseursalon - Ihr Experte für Haarstyling, Coloration und Pflege in höchster Qualität.">
+    <title>SALON | Exklusives Haarstyling</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✂</text></svg>">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
+    <!-- Header -->
+    <header class="header header--transparent" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="#" class="header__logo">
+                    Salon
+                    <span>Paris</span>
+                </a>
+
+                <nav class="nav">
+                    <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav__list" id="navList">
+                        <li><a href="#services" class="nav__link">Services</a></li>
+                        <li><a href="#about" class="nav__link">Über uns</a></li>
+                        <li><a href="#gallery" class="nav__link">Galerie</a></li>
+                        <li><a href="#contact" class="nav__link">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero__background">
+            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1920&q=80" alt="Salon Interior">
+        </div>
+        <div class="hero__content">
+            <p class="hero__label">Willkommen bei</p>
+            <h1 class="hero__title">Salon Paris</h1>
+            <p class="hero__subtitle">
+                Wo Eleganz auf Expertise trifft. Erleben Sie erstklassige Haarpflege
+                in einem Ambiente, das Schönheit neu definiert.
+            </p>
+            <div class="hero__cta">
+                <a href="#contact" class="btn btn--white">Termin vereinbaren</a>
+                <a href="#services" class="btn btn--ghost">Unsere Services</a>
+            </div>
+        </div>
+        <div class="hero__scroll">Scroll</div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="services__header">
+                <span class="text-label">Was wir bieten</span>
+                <h2>Unsere Services</h2>
+                <p>Jeder Service wird mit höchster Präzision und Leidenschaft ausgeführt.</p>
+            </div>
+
+            <div class="services__grid">
+                <div class="service-card">
+                    <svg class="service-card__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M8 40V20c0-8.837 7.163-16 16-16s16 7.163 16 16v20"/>
+                        <path d="M8 28h32M24 4v36"/>
+                    </svg>
+                    <h3 class="service-card__title">Schnitt & Styling</h3>
+                    <p class="service-card__desc">Präzise Schnitte, die Ihre Persönlichkeit unterstreichen und Ihren Stil perfektionieren.</p>
+                </div>
+
+                <div class="service-card">
+                    <svg class="service-card__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <circle cx="24" cy="24" r="20"/>
+                        <circle cx="24" cy="24" r="12"/>
+                        <circle cx="24" cy="24" r="4"/>
+                    </svg>
+                    <h3 class="service-card__title">Coloration</h3>
+                    <p class="service-card__desc">Von subtilen Highlights bis zu mutigen Transformationen - Farbe, die begeistert.</p>
+                </div>
+
+                <div class="service-card">
+                    <svg class="service-card__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M24 4c0 11.046 8.954 20 20 20-11.046 0-20 8.954-20 20 0-11.046-8.954-20-20-20 11.046 0 20-8.954 20-20z"/>
+                    </svg>
+                    <h3 class="service-card__title">Treatments</h3>
+                    <p class="service-card__desc">Luxuriöse Pflege-Treatments für gesundes, glänzendes Haar voller Vitalität.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section section--alt" id="about">
+        <div class="container">
+            <div class="about">
+                <div class="about__image">
+                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80" alt="Stylist bei der Arbeit">
+                </div>
+                <div class="about__content">
+                    <span class="text-label about__label">Über uns</span>
+                    <h2 class="about__title">Schönheit ist unsere Passion</h2>
+                    <p class="about__text text-large">
+                        Seit über einem Jahrzehnt definieren wir Haarstyling neu.
+                        Unser Team aus erfahrenen Stylisten verbindet traditionelle
+                        Handwerkskunst mit den neuesten Trends der Branche.
+                    </p>
+                    <p class="about__text">
+                        Wir glauben, dass jeder Besuch ein Erlebnis sein sollte.
+                        In unserem Salon finden Sie nicht nur erstklassige Dienstleistungen,
+                        sondern auch einen Ort der Entspannung und des Wohlbefindens.
+                    </p>
+                    <a href="#contact" class="btn btn--secondary">Mehr erfahren</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="section section--dark">
+        <div class="container">
+            <div class="testimonial">
+                <p class="testimonial__quote">
+                    „Ein Salon, der wirklich versteht, was Eleganz bedeutet.
+                    Das Team ist außergewöhnlich talentiert und der Service unvergleichlich."
+                </p>
+                <p class="testimonial__author">— Marie Schmidt, Kundin seit 2019</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prices Section -->
+    <section class="section" id="prices">
+        <div class="container container--narrow">
+            <div class="services__header">
+                <span class="text-label">Preisliste</span>
+                <h2>Unsere Preise</h2>
+            </div>
+
+            <div class="price-item">
+                <span class="price-item__name">Damenhaarschnitt</span>
+                <span class="price-item__price">ab 65 €</span>
+            </div>
+            <div class="price-item">
+                <span class="price-item__name">Herrenhaarschnitt</span>
+                <span class="price-item__price">ab 45 €</span>
+            </div>
+            <div class="price-item">
+                <span class="price-item__name">Coloration</span>
+                <span class="price-item__price">ab 85 €</span>
+            </div>
+            <div class="price-item">
+                <span class="price-item__name">Balayage / Highlights</span>
+                <span class="price-item__price">ab 120 €</span>
+            </div>
+            <div class="price-item">
+                <span class="price-item__name">Keratin Treatment</span>
+                <span class="price-item__price">ab 180 €</span>
+            </div>
+            <div class="price-item">
+                <span class="price-item__name">Brautstyling</span>
+                <span class="price-item__price">auf Anfrage</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section section--alt" id="gallery">
+        <div class="container">
+            <div class="services__header">
+                <span class="text-label">Portfolio</span>
+                <h2>Unsere Arbeiten</h2>
+            </div>
+
+            <div class="gallery__grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=800&q=80" alt="Hairstyle 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?w=400&q=80" alt="Hairstyle 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=400&q=80" alt="Hairstyle 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=400&q=80" alt="Hairstyle 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?w=400&q=80" alt="Hairstyle 5">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="contact">
+                <div class="contact__info">
+                    <div>
+                        <span class="text-label">Kontakt</span>
+                        <h2>Besuchen Sie uns</h2>
+                    </div>
+
+                    <div class="contact__item">
+                        <h4>Adresse</h4>
+                        <p>Musterstraße 123<br>10115 Berlin</p>
+                    </div>
+
+                    <div class="contact__item">
+                        <h4>Öffnungszeiten</h4>
+                        <p>
+                            Di – Fr: 10:00 – 20:00<br>
+                            Sa: 09:00 – 18:00<br>
+                            So – Mo: Geschlossen
+                        </p>
+                    </div>
+
+                    <div class="contact__item">
+                        <h4>Kontakt</h4>
+                        <p>
+                            Tel: +49 30 123 456 78<br>
+                            E-Mail: info@salon-paris.de
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact__form">
+                    <form class="form" id="contactForm">
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label class="form__label" for="name">Name</label>
+                                <input type="text" id="name" class="form__input" required>
+                            </div>
+                            <div class="form__group">
+                                <label class="form__label" for="email">E-Mail</label>
+                                <input type="email" id="email" class="form__input" required>
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="service">Service</label>
+                            <select id="service" class="form__select">
+                                <option value="">Bitte wählen</option>
+                                <option value="cut">Schnitt & Styling</option>
+                                <option value="color">Coloration</option>
+                                <option value="treatment">Treatments</option>
+                                <option value="bridal">Brautstyling</option>
+                            </select>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label" for="message">Nachricht</label>
+                            <textarea id="message" class="form__textarea" placeholder="Erzählen Sie uns von Ihrem Wunschtermin..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary">Anfrage senden</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section section--dark">
+        <div class="container">
+            <div class="cta">
+                <h2 class="cta__title" style="color: white;">Bereit für Ihre Transformation?</h2>
+                <p class="cta__text" style="color: rgba(255,255,255,0.7);">
+                    Vereinbaren Sie noch heute Ihren Termin und erleben Sie erstklassige Haarpflege.
+                </p>
+                <a href="tel:+493012345678" class="btn btn--white">+49 30 123 456 78</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <div class="footer__logo">Salon Paris</div>
+                    <p class="footer__desc">
+                        Exklusives Haarstyling in Berlin.
+                        Wir verbinden Tradition mit Innovation für Ihren perfekten Look.
+                    </p>
+                </div>
+
+                <div class="footer__col">
+                    <h4 class="footer__title">Navigation</h4>
+                    <nav class="footer__links">
+                        <a href="#services" class="footer__link">Services</a>
+                        <a href="#about" class="footer__link">Über uns</a>
+                        <a href="#gallery" class="footer__link">Galerie</a>
+                        <a href="#contact" class="footer__link">Kontakt</a>
+                    </nav>
+                </div>
+
+                <div class="footer__col">
+                    <h4 class="footer__title">Services</h4>
+                    <nav class="footer__links">
+                        <a href="#" class="footer__link">Schnitt & Styling</a>
+                        <a href="#" class="footer__link">Coloration</a>
+                        <a href="#" class="footer__link">Treatments</a>
+                        <a href="#" class="footer__link">Brautstyling</a>
+                    </nav>
+                </div>
+
+                <div class="footer__col">
+                    <h4 class="footer__title">Folgen Sie uns</h4>
+                    <nav class="footer__links">
+                        <a href="#" class="footer__link">Instagram</a>
+                        <a href="#" class="footer__link">Facebook</a>
+                        <a href="#" class="footer__link">Pinterest</a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copy">© 2024 Salon Paris. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
     <!-- JavaScript -->
-    <script src="js/main.js"></script>
+    <script src="js/main.js" type="module"></script>
 </body>
 </html>

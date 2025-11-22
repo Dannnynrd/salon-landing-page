@@ -1,0 +1,21 @@
+/* Main CSS - Import all styles */
+
+/* Base styles */
+@import url('base/reset.css');
+@import url('base/variables.css');
+@import url('base/typography.css');
+
+/* Layout styles */
+@import url('layouts/header.css');
+@import url('layouts/footer.css');
+@import url('layouts/grid.css');
+
+/* Component styles */
+@import url('components/buttons.css');
+@import url('components/cards.css');
+@import url('components/forms.css');
+@import url('components/navigation.css');
+
+/* Utility styles */
+@import url('utils/helpers.css');
+@import url('utils/responsive.css');

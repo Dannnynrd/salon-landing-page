@@ -1,0 +1,25 @@
+/* CSS Variables */
+:root {
+    /* Colors */
+    --color-primary: #000000;
+    --color-secondary: #ffffff;
+    --color-accent: #000000;
+
+    /* Typography */
+    --font-primary: system-ui, -apple-system, sans-serif;
+    --font-secondary: Georgia, serif;
+
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 4rem;
+
+    /* Layout */
+    --container-max-width: 1200px;
+    --border-radius: 4px;
+
+    /* Transitions */
+    --transition-speed: 0.3s;
+}

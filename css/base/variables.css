@@ -1,10 +1,12 @@
 /* CSS Variables - Minimalist Black & White Design */
 :root {
-    /* Colors - Pure Black & White */
+    /* Colors - Black, White & Green Accent */
     --color-primary: #000000;
     --color-secondary: #ffffff;
     --color-black: #000000;
     --color-white: #ffffff;
+    --color-green: #2d5a27;
+    --color-green-light: #3d7a35;
     --color-text: #1a1a1a;
     --color-text-light: #555555;
     --color-text-muted: #888888;

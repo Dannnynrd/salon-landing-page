@@ -1,19 +1,19 @@
 /* CSS Variables - Minimalist Black & White Design */
 :root {
     /* Colors - Black, White & Green Accent */
-    --color-primary: #000000;
+    --color-primary: #0a0a0a;
     --color-secondary: #ffffff;
-    --color-black: #000000;
+    --color-black: #0a0a0a;
     --color-white: #ffffff;
-    --color-green: #2d5a27;
-    --color-green-light: #3d7a35;
+    --color-green: #1a472a;
+    --color-green-light: #2d5a3a;
     --color-text: #1a1a1a;
-    --color-text-light: #555555;
-    --color-text-muted: #888888;
+    --color-text-light: #4a4a4a;
+    --color-text-muted: #777777;
     --color-background: #ffffff;
-    --color-background-alt: #f8f8f8;
-    --color-background-dark: #000000;
-    --color-border: #e0e0e0;
+    --color-background-alt: #fafafa;
+    --color-background-dark: #0a0a0a;
+    --color-border: #e8e8e8;
     --color-border-dark: #1a1a1a;
 
     /* Typography - Single Clean Font */
